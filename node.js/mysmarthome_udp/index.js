@@ -6,10 +6,10 @@ const { URL, URLSearchParams } = require('url');
 const fetch = require('node-fetch');
 const Headers = fetch.Headers;
 
-const base_url = "yNode.jsƒT[ƒo‚ÌURLz";
+const base_url = "ã€Node.jsã‚µãƒ¼ãƒã®URLã€‘";
 
-var UDP_HOST = 'y©g‚ÌIPƒAƒhƒŒƒXz';
-var UDP_PORT = 3333; //ESP32‚©‚ç‚ÌUDPóM‚ğ‘Ò‚¿ó‚¯‚éƒ|[ƒg”Ô†
+var UDP_HOST = '0.0.0.0';
+var UDP_PORT = 3333; //ESP32ã‹ã‚‰ã®UDPå—ä¿¡ã‚’å¾…ã¡å—ã‘ã‚‹ãƒãƒ¼ãƒˆç•ªå·
 
 var server = dgram.createSocket('udp4');
 
