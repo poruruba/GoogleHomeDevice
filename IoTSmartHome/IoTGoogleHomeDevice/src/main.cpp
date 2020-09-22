@@ -9,9 +9,6 @@
 #include <M5StickC.h>
 #endif
 
-//#define DEVICE_ONOFF
-#define DEVICE_LOCK
-
 #include <WiFi.h>
 #include <ArduinoJson.h>
 #include <PubSubClient.h>
