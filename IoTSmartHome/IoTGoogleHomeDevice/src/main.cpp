@@ -24,7 +24,6 @@ const char* wifi_password = "【WiFiアクセスポイントのパスワード�
 
 #define DEVICE_NAME "switch" // ★DEVICEの名前
 
-#define NOTIFY(a) 
 const char* mqtt_server = "【MQTTブローカのホスト名】"; // MQTTのIPかホスト名
 const int mqtt_port = 1883;       // MQTTのポート
 const char* topic_notify = "$aws/things/" DEVICE_NAME "/shadow/update/delta"; // 受信用トピック名
@@ -43,8 +42,8 @@ PubSubClient client(wifiClient);
 #define MQTT_BUFFER_SIZE  1024 // MQTT送受信のバッファサイズ
 
 // ★DEVICEごとの定義
-#define NUM_OF_ATTR   1
 #define LED_PIN     GPIO_NUM_10
+#define NUM_OF_ATTR   1
 typedef struct{
   bool on;
 } DEVICE_STATUS;
